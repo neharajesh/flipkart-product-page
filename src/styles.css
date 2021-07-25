@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {    
+    font-family: 'Roboto', sans-serif;    
+}
+
+.headerContainer {
+    height: 10vh;
+    background-color: #00AFB5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.searchContainer {
+    margin: 0 2rem;
+    background-color: white;
+    padding-right: 0.5rem;
+    border-radius: 3px;
+}
+
+.searchBar {
+    width: 25rem;    
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+}
+
+.searchBar:focus {
+    outline: none;
+}
+
+.searchButton {
+    cursor: pointer;
+}
+
+.horizontalContainer {
+    display: flex;
+    align-items: center;
+}
+
+.navLink {
+    margin: 0 1rem;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.productPageContainer {
+    display: flex;
+}
+
+.filterContainer {
+    width: 20vw;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 0.9em;
+    border-right: 1px solid grey;    
+}
+
+.filterSection {
+    margin: 1rem 0rem;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+.filterSectionTitle {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid grey;
+    margin-bottom: 1rem;
+}
+
+.resetFiltersButton {
+    padding: 0.5rem 1rem;
+    background-color: #00AFB5;
+    border: none;
+    border-radius: 3px;
+}
+
+.productsContainer {
+    width: 80vw;
+    display: flex;
+    flex-flow: row wrap;
+    overflow-y: scroll;
+}
+
+.productCard { 
+    margin: 1rem;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.productCard:hover {
+    box-shadow: 0px 0px 18px 0px rgba(150, 150, 150, 0.75);
+    border-radius: 3px;
+}
+
+.wishlistButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    border: none;
+    width: 2rem;
+    background-color: transparent;
+    font-size: 1.2em;
+}
+
+.productImage {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.productDetails {
+    padding: 1rem;
+}
+
+.prodBrand {
+    color: grey;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.prodName {
+    font-size: 1.1em;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
